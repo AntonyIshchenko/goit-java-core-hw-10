@@ -121,9 +121,9 @@ public class FileReader {
         }
 
         for (Map.Entry<Integer, String> entry : treeMap.entrySet()) {
-            List<String> freqWords =  new ArrayList<>(List.of(entry.getValue().split(" ")));
+            List<String> freqWords = new ArrayList<>(List.of(entry.getValue().split(" ")));
             freqWords.sort(Comparator.naturalOrder());
-            for (String word:freqWords) {
+            for (String word : freqWords) {
                 System.out.println(word + " " + entry.getKey());
             }
         }
@@ -157,8 +157,6 @@ public class FileReader {
                 case "age":
                     setAge(Integer.parseInt(value));
                     break;
-                default:
-                    // код, якщо вираз не дорівнює жодному значенню
             }
         }
 
